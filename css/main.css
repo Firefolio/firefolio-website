@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+h1 > small {
+  color: #554A5E;
+  font-size: 3.0REM;
+}
