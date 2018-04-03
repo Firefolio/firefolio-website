@@ -1047,6 +1047,46 @@
 
 	}
 
+/* Burning Quill */
+
+	#burning-quill {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 360px;
+		width: 100%;
+	}
+
+	@media screen and (max-width: 1680px) {
+		#burning-quill {
+			max-width: 240px;
+		 	height: auto;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		#burning-quill {
+			max-width: 120px;
+		 	height: auto;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#burning-quill {
+			max-width: 128px;
+		 	height: auto;
+		}
+	}
+
+/* Columns */
+
+	@media screen and (min-width: 736px) {
+		.column {
+			float: left;
+			width: 50%;
+		}
+	}
+
 /* Signup Form */
 
 	#signup-form {
@@ -1189,24 +1229,3 @@
 			}
 
 		}
-
-/* Burning Quill */
-
-	#burning-quill {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		vertical-align: middle;
-		max-width: 360px;
-		width: 100%;
-		height: auto;
-	}
-
-/* Columns */
-
-	@media (min-width: 735px) {
-		.column {
-			float: left;
-			width: 50%;
-		}
-	}
