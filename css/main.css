@@ -16,13 +16,13 @@ html {
 }
 
 ::-moz-selection {
-		background: #ff7f2a;
-		text-shadow: none;
+	background: #ff7f2a;
+	text-shadow: none;
 }
 
 ::selection {
-		background: #ff7f2a;
-		text-shadow: none;
+	background: #ff7f2a;
+	text-shadow: none;
 }
 
 /* ==========================================================================
@@ -45,37 +45,82 @@ nav li {
 }
 
 nav li.chosen {
+	color: white;
 	background-color: #ff7f2a; /* Light Orange */
 }
 
 nav li.chosen:hover,
 nav li.chosen:focus {
-	color: white;
 	background-color: #aa492a; /* Dark Orange */
 }
 
 /* ==========================================================================
-	 Iconography
-	 ========================================================================== */
+ Iconography
+ ========================================================================== */
 
-.icon {
-	max-width: 32px;
+nav .icon {
+	max-width: 16px;
 	width: 100%;
 	height: auto;
 }
 
+.jumbotron .icon {
+	text-align: center;
+	max-width: 66%;
+	padding: 16px;
+}
+
+/* ==========================================================================
+ Text
+ ========================================================================== */
+
 .jumbotron {
-	padding: 64px;
+	padding: 32px;
 	max-width: 100%;
-	width: 100%;
-	height: auto;
 	background-color: #96a4a2;
+	color: white;
+}
+
+/* ==========================================================================
+ Grid
+ ========================================================================== */
+
+.row {
+	padding: 2.0em;
 }
 
 /* ==========================================================================
  Buttons
  ========================================================================== */
 
-.button {
+.button-download {
+	color: white; /*White-Gray*/
+	background-color: #ff7f2a; /*Light Orange*/
+	border-radius: 0px;
+	border: none;
+}
 
+.button-download:hover {
+	background-color: #aa492a; /* Dark Orange */
+}
+
+/* ==========================================================================
+ Utility Classes
+ ========================================================================== */
+
+.u-vertically-center {
+	min-height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ==========================================================================
+ Media Queries
+ ========================================================================== */
+
+/* Mobile Phones */
+@media (max-width: 400px) {
+	.container {
+		width: 100%;
+	}
 }
