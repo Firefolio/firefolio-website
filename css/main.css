@@ -89,8 +89,8 @@ nav .icon {
 	font-size: 2.0rem;
 }
 
-.features .feature::firstchild {
-	border-top: 333px solid lightgrey;
+.features:first-child {
+	background-color: black;
 }
 
 .features .feature {
@@ -102,7 +102,6 @@ nav .icon {
 }
 
 .feature img {
-	margin: auto;
 	padding: 8px;
 	border: 1px solid lightgrey;
 	background-color: #f2ede9; /* Cream */
@@ -127,20 +126,38 @@ blockquote {
 }
 
 /* ==========================================================================
- Grid
+ Footer
  ========================================================================== */
 
 .footer {
 	min-width: 100%;
-	background-color: #354854;
+	background-color: #354854; /*Navy Blue*/
 }
 
 .footer .container {
-	background-color: #354854;
+	background-color: #354854; /*Navy Blue*/
 }
 
 .footer * {
 	color: whitesmoke;
+}
+
+.footer input {
+	background-color: #354854; /* Navy Blue */
+	border-radius: 0px;
+	border-top: 0;
+	border-bottom: 1px solid whitesmoke;
+	border-left: 0;
+	border-right: 0;
+}
+
+.footer input:focus {
+	background-color: #354854;
+	border-radius: 0px;
+	border-top: 0;
+	border-bottom: 1px solid whitesmoke;
+	border-left: 0;
+	border-right: 0;
 }
 
 /* ==========================================================================
