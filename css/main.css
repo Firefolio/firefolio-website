@@ -80,7 +80,7 @@ nav .icon {
 .jumbotron {
 	padding: 32px;
 	max-width: 100%;
-	background-color: #96a4a2;
+	background-color: #f2ede9; /* Cream */
 	color: white;
 }
 
@@ -97,7 +97,7 @@ nav .icon {
  ========================================================================== */
 
 .button-download {
-	color: white; /*White-Gray*/
+	color: white;
 	background-color: #ff7f2a; /*Light Orange*/
 	border-radius: 0px;
 	border: none;
@@ -133,7 +133,18 @@ nav .icon {
 		width: 100%;
 	}
 
+	.u-center-vertical {
+		height: 100%;
+	}
+
 	.u-hide-on-mobile {
+		display: none;
+	}
+}
+
+/* Phablet */
+@media (max-width: 550px) {
+	.u-hide-on-phablet {
 		display: none;
 	}
 }
