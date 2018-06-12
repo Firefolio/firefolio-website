@@ -84,6 +84,35 @@ nav .icon {
 	color: white;
 }
 
+.description p {
+	font-size: 2.0rem;
+}
+
+.features .feature::firstchild {
+	border-top: 333px solid lightgrey;
+}
+
+.features .feature {
+	border-top: 1px solid lightgrey;
+}
+
+.feature p {
+	font-size: 2.0rem;
+}
+
+.feature img {
+	margin: auto;
+	padding: 8px;
+	border: 1px solid lightgrey;
+	background-color: #f2ede9; /* Cream */
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 32px;
+	border-left: 4px solid lightgrey;
+}
+
 /* ==========================================================================
  Grid
  ========================================================================== */
