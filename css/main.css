@@ -1,5 +1,5 @@
 /* ==========================================================================
- General Colours
+ Colour Scheme
  ========================================================================== */
 
 * {
@@ -54,10 +54,6 @@ nav li.chosen:focus {
 	background-color: #aa492a; /* Dark Orange */
 }
 
-/* ==========================================================================
- Iconography
- ========================================================================== */
-
 nav .icon {
 	max-width: 16px;
 	width: 100%;
@@ -65,8 +61,11 @@ nav .icon {
 }
 
 .jumbotron .icon {
-	text-align: center;
-	max-width: 66%;
+	display: block;
+	margin: auto;
+	max-width: 64%;
+	max-height: 100;
+	width: 100%;
 	padding: 16px;
 }
 
@@ -108,8 +107,14 @@ nav .icon {
  Utility Classes
  ========================================================================== */
 
-.u-vertically-center {
-	min-height: 10em;
+.u-center-horizontal {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.u-center-vertical {
+	height: 16em;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -122,5 +127,9 @@ nav .icon {
 @media (max-width: 400px) {
 	.container {
 		width: 100%;
+	}
+
+	.u-hide-on-mobile {
+		display: none;
 	}
 }
