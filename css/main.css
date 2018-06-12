@@ -80,6 +80,7 @@ nav .icon {
 .jumbotron {
 	padding: 32px;
 	max-width: 100%;
+	min-height: 100%;
 	background-color: #f2ede9; /* Cream */
 	color: white;
 }
@@ -113,12 +114,41 @@ blockquote {
 	border-left: 4px solid lightgrey;
 }
 
+.recommendation {
+	min-height: 100%;
+}
+
+.call-to-action {
+	padding: 32px;
+	max-width: 100%;
+	min-height: 32em;
+	background-color: #f2ede9; /* Cream */
+	color: white;
+}
+
+/* ==========================================================================
+ Grid
+ ========================================================================== */
+
+.footer {
+	min-width: 100%;
+	background-color: #354854;
+}
+
+.footer .container {
+	background-color: #354854;
+}
+
+.footer * {
+	color: whitesmoke;
+}
+
 /* ==========================================================================
  Grid
  ========================================================================== */
 
 .row {
-	padding: 2.0em;
+	padding: 2.0rem;
 }
 
 /* ==========================================================================
@@ -147,7 +177,7 @@ blockquote {
 }
 
 .u-center-vertical {
-	height: 16em;
+	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -158,14 +188,6 @@ blockquote {
 
 /* Mobile Phones */
 @media (max-width: 400px) {
-	.container {
-		width: 100%;
-	}
-
-	.u-center-vertical {
-		height: 100%;
-	}
-
 	.u-hide-on-mobile {
 		display: none;
 	}
@@ -173,6 +195,18 @@ blockquote {
 
 /* Phablet */
 @media (max-width: 550px) {
+	.container {
+		width: 100%;
+	}
+
+	.button-download {
+		width: 100%;
+	}
+
+	.u-center-vertical {
+		height: 100%;
+	}
+
 	.u-hide-on-phablet {
 		display: none;
 	}
