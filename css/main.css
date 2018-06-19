@@ -103,6 +103,11 @@ nav .icon {
 /* Features */
 .features .feature:first-child {
 	border-top: 0;
+	margin-top: 0;
+}
+
+.features .feature:last-child {
+	margin-bottom: 0;
 }
 
 .features .feature {
