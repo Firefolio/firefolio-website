@@ -6,6 +6,15 @@
 	color: #45414d; /* Navy Black */
 }
 
+a {
+	color: #45414d;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
 body,
 html {
 	background-color: whitesmoke;
@@ -39,7 +48,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Philosopher', Display
+	font-family: 'Philosopher', serif;
+}
+
+.jumbotron h2 {
+	font-family: 'Open Sans', sans-serif;
 }
 
 /* ==========================================================================
@@ -88,15 +101,6 @@ nav .icon {
 	height: auto;
 }
 
-.jumbotron .icon {
-	display: block;
-	margin: auto;
-	max-width: 64%;
-	max-height: 100;
-	width: 100%;
-	padding: 16px;
-}
-
 /* ==========================================================================
  Text
  ========================================================================== */
@@ -110,6 +114,20 @@ nav .icon {
 	color: white;
 }
 
+.jumbotron h1 {
+	font-size: 8.0rem;
+	margin: 0 auto;
+}
+
+.jumbotron .icon {
+	display: block;
+	margin: auto;
+	max-width: 64%;
+	max-height: 100;
+	width: 100%;
+	padding: 16px;
+}
+
 .jumbotron .version-number {
 	font-size: 1.6rem;
 }
@@ -119,6 +137,7 @@ nav .icon {
 }
 
 /* Features */
+
 .features hr {
 	width: 80%;
 	margin: 0 auto;
@@ -152,18 +171,22 @@ nav .icon {
 }
 
 /* Recommendations */
-blockquote {
-	margin-left: 0;
-	padding-left: 32px;
-	border-left: 4px solid lightgrey;
-}
-
-blockquote i {
-	font-size: 1.8rem;
+.recomendations {
+	margin-bottom: 32px;
 }
 
 .recommendation {
 	min-height: 100%;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 32px;
+	border-left: 2px solid lightgrey;
+}
+
+blockquote i {
+	font-size: 1.8rem;
 }
 
 /* Call to Action */
@@ -181,8 +204,8 @@ blockquote i {
    vertical-align: middle;
 }
 
-textarea {
-	background-color: #354854;
+.call-to-action .u-center-vertical {
+	height: 20em;
 }
 
 /* ==========================================================================
