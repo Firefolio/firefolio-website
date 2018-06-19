@@ -48,6 +48,17 @@ nav li {
 	list-style: none;
 }
 
+nav li a {
+	color: #45414d;
+	transition: ease-out 0.32s;
+}
+
+nav li:hover,
+nav li:focus {
+	background-color: #ff7f2a; /* Light Orange */
+	transition: ease-in 0.32s;
+}
+
 nav li.chosen {
 	color: white;
 	background-color: #ff7f2a; /* Light Orange */
