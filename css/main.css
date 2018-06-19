@@ -30,6 +30,19 @@ a:hover {
 }
 
 /* ==========================================================================
+ Fonts
+ ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Philosopher', Display
+}
+
+/* ==========================================================================
  Navigation Bar
  ========================================================================== */
 
@@ -42,13 +55,13 @@ nav {
 nav li {
 	padding: 16px 32px 16px 32px;
 	margin: 0;
-	width: auto;
-	height: 100%;
 	float: left;
 	list-style: none;
 }
 
 nav li a {
+	width: 100%;
+	height: 100%;
 	color: #45414d;
 	transition: ease-out 0.32s;
 }
@@ -56,7 +69,7 @@ nav li a {
 nav li:hover,
 nav li:focus {
 	background-color: #ff7f2a; /* Light Orange */
-	transition: ease-in 0.32s;
+	transition: ease-in-out 0.32s;
 }
 
 nav li.chosen {
@@ -88,6 +101,7 @@ nav .icon {
  Text
  ========================================================================== */
 
+/* Jumbotron */
 .jumbotron {
 	padding: 32px;
 	max-width: 100%;
@@ -96,13 +110,21 @@ nav .icon {
 	color: white;
 }
 
+.jumbotron .version-number {
+	font-size: 1.6rem;
+}
+
 .description p {
 	font-size: 2.0rem;
 }
 
 /* Features */
+.features hr {
+	width: 80%;
+	margin: 0 auto;
+}
+
 .features .feature:first-child {
-	border-top: 0;
 	margin-top: 0;
 }
 
@@ -111,7 +133,6 @@ nav .icon {
 }
 
 .features .feature {
-	border-top: 1px solid lightgrey;
 	margin-top: 32px;
 	margin-bottom: 32px;
 	padding-top: 64px;
