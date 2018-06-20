@@ -18,6 +18,9 @@ a:focus {
 body,
 html {
 	background-color: whitesmoke;
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 .container {
@@ -102,8 +105,12 @@ nav .icon {
 }
 
 /* ==========================================================================
- Text
+ Content
  ========================================================================== */
+
+.wrapper {
+
+}
 
 /* Jumbotron */
 .jumbotron {
@@ -136,8 +143,13 @@ nav .icon {
 	font-size: 2.0rem;
 }
 
-/* Features */
+/*Content*/
+.content .row {
+	margin-left: 4%;
+	margin-right: 4%;
+}
 
+/* Features */
 .features hr {
 	width: 80%;
 	margin: 0 auto;
