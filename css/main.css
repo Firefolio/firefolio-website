@@ -21,16 +21,16 @@ html {
 }
 
 .container {
-	background-color: #FAFAFA;
+	background-color: #FAFAFA; /* Near White */
 }
 
 ::-moz-selection {
-	background: #ff7f2a;
+	background: #ff7f2a; /* Light Orange */
 	text-shadow: none;
 }
 
 ::selection {
-	background: #ff7f2a;
+	background: #ff7f2a; /* Light Orange */
 	text-shadow: none;
 }
 
