@@ -202,10 +202,6 @@ body {
 }
 
 /* Recommendations */
-.recomendations {
-	margin-bottom: 32px;
-}
-
 .recommendation {
 	min-height: 100%;
 }
@@ -372,11 +368,6 @@ blockquote i {
 	nav ul li {
 		display: none;
 		width: 100vw;
-	}
-
-	.content {
-		margin: 0;
-		width: 100%;
 	}
 
 	.jumbotron .icon {
