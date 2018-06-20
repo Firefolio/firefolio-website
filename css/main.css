@@ -76,11 +76,12 @@ nav li {
 	margin: 0;
 	float: left;
 	list-style: none;
+	min-height: 100%;
 }
 
 nav li a {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	color: #45414d;
 	transition: ease-out 0.32s;
 }
@@ -217,11 +218,10 @@ blockquote i {
 
 /* Call to Action */
 .call-to-action {
-    display: block;
-    white-space: nowrap;
     max-width: 100%;
-    height: 48rem;
+    height: 64rem;
     background-color: #f2ede9; /* Cream */
+	position: relative;
 }
 
 .call-to-action:before {
@@ -230,8 +230,12 @@ blockquote i {
    vertical-align: middle;
 }
 
-.call-to-action .u-center-vertical {
-	height: 20em;
+.call-to-action .center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ==========================================================================
@@ -341,6 +345,10 @@ blockquote i {
 
 /* Mobile Phones */
 @media (max-width: 400px) {
+	.jumbotron .icon {
+		width: 64%;
+	}
+
 	.u-hide-on-mobile {
 		display: none;
 	}
@@ -348,6 +356,37 @@ blockquote i {
 
 /* Phablet */
 @media (max-width: 550px) {
+	.open-navbar {
+		display: block;
+		width: 100vw;
+	}
+
+	nav .icon {
+		max-width: 32px;
+	}
+
+	nav ul li {
+		display: none;
+		width: 100vw;
+	}
+
+	.content {
+		margin: 0;
+		width: 100%;
+	}
+
+	.jumbotron .icon {
+		width: 32%;
+	}
+
+	.jumbotron h1 {
+		font-size: 6.0rem;
+	}
+
+	.jumbotron h2 {
+		font-size: 3.0rem;
+	}
+
 	.u-center-vertical {
 		height: 100%;
 	}
