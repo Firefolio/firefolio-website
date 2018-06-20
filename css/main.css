@@ -18,9 +18,6 @@ a:focus {
 body,
 html {
 	background-color: whitesmoke;
-	margin: 0;
-	padding: 0;
-	height: 100%;
 }
 
 .container {
@@ -108,10 +105,18 @@ nav .icon {
  Content
  ========================================================================== */
 
-.wrapper {
+html {
+	height: 100%;
+}
+
+body {
 	display: flex;
-	min-height: 100%;
 	flex-direction: column;
+	height: 100vh;
+}
+
+.content {
+	flex: 1 0 auto;
 }
 
 /* Jumbotron */
@@ -229,11 +234,12 @@ blockquote i {
 .footer {
 	flex-shrink: 0;
 	min-width: 100%;
-	background-color: #354854; /*Navy Blue*/
+	background-color: #354854; /* Navy Blue */
+	color: whitesmoke;
 }
 
 .footer .container {
-	background-color: #354854; /*Navy Blue*/
+	background-color: #354854; /* Navy Blue */
 }
 
 .footer * {
