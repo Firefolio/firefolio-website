@@ -109,7 +109,9 @@ nav .icon {
  ========================================================================== */
 
 .wrapper {
-
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
 }
 
 /* Jumbotron */
@@ -225,6 +227,7 @@ blockquote i {
  ========================================================================== */
 
 .footer {
+	flex-shrink: 0;
 	min-width: 100%;
 	background-color: #354854; /*Navy Blue*/
 }
@@ -257,6 +260,7 @@ blockquote i {
 
 /* Copyright Notice */
 .copyright {
+	flex-shrink: 0;
 	padding: 32px;
 	color: whitesmoke;
 	background-color: #45414d;
