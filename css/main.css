@@ -258,6 +258,11 @@ blockquote i {
 	color: whitesmoke;
 }
 
+.footer a:hover,
+.footer a li:hover {
+	color: #ff7f2a; /* Light Orange */
+}
+
 .footer input {
 	background-color: #354854; /* Navy Blue */
 	border-radius: 0px;
@@ -281,16 +286,26 @@ blockquote i {
 	flex-shrink: 0;
 	padding: 32px;
 	color: whitesmoke;
-	background-color: #45414d;
+	background-color: #45414d; /* Navy Black */
 }
 
 .copyright * {
 	color: whitesmoke;
-	background-color: #45414d;
+	background-color: #45414d; /* Navy Black */
 }
 
 .copyright small {
 	color: whitesmoke;
+}
+
+.copyright small a:hover {
+	color: #ff7f2a; /* Light Orange */
+}
+
+/* Timeline */
+.timeline {
+	padding-left: 32px;
+	border-left: 1px solid grey;
 }
 
 /* ==========================================================================
