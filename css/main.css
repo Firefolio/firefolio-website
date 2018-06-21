@@ -1,0 +1,424 @@
+/* ==========================================================================
+ Colour Scheme
+ ========================================================================== */
+
+* {
+	color: #45414d; /* Navy Black */
+}
+
+a {
+	color: #45414d;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+body,
+html {
+	background-color: whitesmoke;
+}
+
+.container {
+	background-color: #FAFAFA; /* Near White */
+}
+
+::-moz-selection {
+	background: #ff7f2a; /* Light Orange */
+	text-shadow: none;
+}
+
+::selection {
+	background: #ff7f2a; /* Light Orange */
+	text-shadow: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* ==========================================================================
+ Fonts
+ ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Philosopher', serif;
+}
+
+p,
+big,
+small,
+strong,
+em {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* ==========================================================================
+ Navigation Bar
+ ========================================================================== */
+
+nav {
+	width: 100%;
+	height: auto;
+	background-color: white;
+}
+
+nav li {
+	padding: 16px 32px 16px 32px;
+	margin: 0;
+	float: left;
+	list-style: none;
+	min-height: 100%;
+}
+
+nav li a {
+	width: 100%;
+	height: auto;
+	color: #45414d;
+	transition: ease-out 0.32s;
+}
+
+nav li:hover,
+nav li:focus {
+	background-color: #ff7f2a; /* Light Orange */
+	transition: ease-in-out 0.32s;
+}
+
+nav li.chosen {
+	color: white;
+	background-color: #ff7f2a; /* Light Orange */
+}
+
+nav li.chosen:hover,
+nav li.chosen:focus {
+	background-color: #aa492a; /* Dark Orange */
+}
+
+nav .icon {
+	max-width: 16px;
+	width: 100%;
+	height: auto;
+}
+
+.opened li {
+	display: block;
+}
+
+/* ==========================================================================
+ Content
+ ========================================================================== */
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+/* Jumbotron */
+.jumbotron {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding: 32px;
+	background-color: #f2ede9; /* Cream */
+	color: white;
+}
+
+.jumbotron h1 {
+	font-size: 8.0rem;
+	margin: 0 auto;
+}
+
+.jumbotron .icon {
+	/* Center Horizontally */
+	display: block;
+	margin: auto;
+	max-width: 64%;
+	max-height: 100;
+	width: 100%;
+	padding: 16px;
+}
+
+.jumbotron .version-number {
+	font-size: 1.6rem;
+}
+
+.description p {
+	font-size: 2.0rem;
+}
+
+/* Content */
+.content .row {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
+/* Features */
+.features hr {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.features .feature:first-child {
+	margin-top: 0;
+}
+
+.features .feature:last-child {
+	margin-bottom: 0;
+}
+
+.features .feature {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.feature p {
+	font-size: 2.0rem;
+}
+
+.feature img {
+	/* Include the border in the box model */
+	box-sizing: border-box;
+	padding: 8px;
+	border: 1px solid lightgrey;
+	background-color: #f2ede9; /* Cream */
+}
+
+/* Recommendations */
+.recommendation {
+	min-height: 100%;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 32px;
+	border-left: 2px solid lightgrey;
+}
+
+blockquote i {
+	font-size: 1.8rem;
+}
+
+/* Call to Action */
+.call-to-action {
+    max-width: 100%;
+    height: 64rem;
+    background-color: #f2ede9; /* Cream */
+	position: relative;
+}
+
+.call-to-action:before {
+   content: "";
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.call-to-action .center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+ Footer
+ ========================================================================== */
+
+.footer {
+	flex-shrink: 0;
+	min-width: 100%;
+	background-color: #354854; /* Navy Blue */
+	color: whitesmoke;
+}
+
+.footer > .container {
+	background-color: #354854; /* Navy Blue */
+	margin-top: 32px;
+}
+
+.footer * {
+	color: whitesmoke;
+}
+
+.footer a:hover,
+.footer a li:hover {
+	color: #ff7f2a; /* Light Orange */
+}
+
+.footer input {
+	background-color: #354854; /* Navy Blue */
+	border-radius: 0px;
+	border-top: 0;
+	border-bottom: 1px solid whitesmoke;
+	border-left: 0;
+	border-right: 0;
+}
+
+.footer input:focus {
+	background-color: #354854;
+	border-radius: 0px;
+	border-top: 0;
+	border-bottom: 1px solid whitesmoke;
+	border-left: 0;
+	border-right: 0;
+}
+
+/* Copyright Notice */
+.copyright {
+	flex-shrink: 0;
+	padding: 32px;
+	color: whitesmoke;
+	background-color: #45414d; /* Navy Black */
+}
+
+.copyright * {
+	color: whitesmoke;
+	background-color: #45414d; /* Navy Black */
+}
+
+.copyright small {
+	color: whitesmoke;
+}
+
+.copyright small a:hover {
+	color: #ff7f2a; /* Light Orange */
+}
+
+/* Timeline */
+.timeline {
+	padding-left: 32px;
+	border-left: 1px solid lightgrey;
+}
+
+/* ==========================================================================
+ Grid
+ ========================================================================== */
+
+.row {
+	padding: 2.0rem;
+}
+
+/* ==========================================================================
+ Buttons
+ ========================================================================== */
+
+.button-download {
+	color: white;
+	background-color: #ff7f2a; /*Light Orange*/
+	border-radius: 0px;
+	border: none;
+}
+
+.button-download:hover {
+	background-color: #aa492a; /* Dark Orange */
+}
+
+/* ==========================================================================
+ Utility Classes
+ ========================================================================== */
+
+.u-center-horizontal {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	white-space: normal;
+	text-align: center;
+}
+
+.u-center-vertical {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+/* ==========================================================================
+ Media Queries
+ ========================================================================== */
+
+/* Mobile Phones */
+@media (max-width: 400px) {
+	.jumbotron .icon {
+		width: 64%;
+	}
+
+	.u-hide-on-mobile {
+		display: none;
+	}
+}
+
+/* Phablet */
+@media (max-width: 550px) {
+	.open-navbar {
+		display: block;
+		width: 100vw;
+	}
+
+	nav .icon {
+		max-width: 32px;
+	}
+
+	nav ul li {
+		display: none;
+		width: 100vw;
+	}
+
+	.jumbotron .icon {
+		width: 32%;
+	}
+
+	.jumbotron h1 {
+		font-size: 6.0rem;
+	}
+
+	.jumbotron h2 {
+		font-size: 3.0rem;
+	}
+
+	.u-center-vertical {
+		height: 100%;
+	}
+
+	.u-hide-on-phablet {
+		display: none;
+	}
+
+	.recommendation {
+		margin-bottom: 64px;
+	}
+}
+
+/* Tablet */
+@media (min-width: 550px) and (max-width: 750px) {
+	.jumbotron h1 {
+		font-size: 7.0rem;
+	}
+
+	.jumbotron h2 {
+		font-size: 3.5rem;
+	}
+}

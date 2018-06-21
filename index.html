@@ -1,115 +1,303 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html class="no-js">
 	<head>
+		<!-- Title -->
 		<title>Firefolio</title>
 
-		<meta
-		charset="utf-8" />
-		<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta
-		name="description"
-		content="A lightweight portfolio system for games professionals." />
+		<!-- Meta Data -->
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<link rel="manifest" href="site.webmanifest">
 		<link rel="apple-touch-icon" href="icon.png">
+		<!-- Place favicon.ico in the root directory -->
 
 		<!-- Stylesheets -->
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
-
-		<!-- Header -->
-		<header id="header">
-            <div class="column">
-                <h1>Soon...</h1>
-                <p>
-                    <strong>Firefolio</strong>
-                    will release to the public.
-                </p>
-                <p>
-                    It's a free and open source portfolio system that allows
-                    programmers to showcase their work to employers. Upload it
-                    to your web host, fill in some forms and you'll have a
-                    striking portfolio site in no time at all...
-                </p>
-            </div>
-			<div class="column">
-				<img
-				id="burning-quill"
-				src="images/burning-quill-icon-grey.png"
-				alt="Burning Quill">
-			</div>
-		</header>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li>
-					<a
-					href="mailto:info@firefolio.org"
-					class="icon fa-envelope"
-					target="_blank">
-						<span class="label">Twitter</span>
-					</a>
-				</li>
-				<li>
-					<a
-					href="https://twitter.com/ItsSeaJay"
-					class="icon fa-twitter"
-					target="_blank">
-						<span class="label">Twitter</span>
-					</a>
-				</li>
-				<li>
-					<a
-					href="https://github.com/ItsSeaJay/firefolio"
-					class="icon fa-github"
-					target="_blank">
-						<span class="label">GitHub</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="copyright">
-				<li>
-					Copyright &copy; Callum John
-					<a href="https://twitter.com/ItsSeaJay">
-						@ItsSeaJay
-					</a>
-					2018.
-				</li>
-				<li>
-					Source code available under the
-					<a href="https://opensource.org/licenses/MIT">
-						MIT Open Source License
-					</a>
-				</li>
-				<li>
-					Template by
-					<a href="http://html5up.net">
-						HTML5 UP
-					</a>
-					(CCA 3.0)
-				</li>
-				<li>
-					Background images may not represent the final product.
-				</li>
-			</ul>
-			</footer>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/boilerplate.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/main.css">
 
 		<!-- Scripts -->
-		<!--[if lte IE 8]>
-			<script src="assets/js/ie/respond.min.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script src="js/navbar.js"></script>
+	</head>
+
+	<body>
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser.
+				Please
+				<a href="https://browsehappy.com/">
+					upgrade your browser
+				</a>
+				to improve your experience and security.
+			</p>
 		<![endif]-->
-		<script src="assets/js/main.js"></script>
+
+		<!-- Navigation Bar -->
+		<nav class="u-cf">
+			<!-- Left Side -->
+			<div class="u-pull-left">
+				<ul>
+					<li class="open-navbar">
+						<img
+						class="icon"
+						src="img/firefolio/icon-black.svg"
+						alt="Burning Quill Icon">
+					</li>
+					<a href="index.html">
+						<li class="chosen">Home</li>
+					</a>
+					<a href="history.html">
+						<li>History</li>
+					</a>
+					<a href="https://firefolio.readthedocs.io/">
+						<li>Documentation</li>
+					</a>
+					<a href="https://github.com/itsseajay/firefolio/">
+						<li>Source Code</li>
+					</a>
+				</ul>
+			</div>
+			<!-- Right Side -->
+			<div class="u-pull-right">
+				<!-- Social Media -->
+				<ul>
+					<a href="https://twitter.com/firefolio" target="_blank">
+						<li>
+							@firefolio
+						</li>
+					</a>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Content -->
+		<div class="container content">
+			<section class="jumbotron row">
+				<div class="one-third column">
+					<img
+					class="icon"
+					src="img/firefolio/icon-orange.svg"
+					alt="">
+				</div>
+				<div class="two-thirds column">
+					<h1>Firefolio</h1>
+					<h2>Online Portfolio System</h2>
+
+					<!-- Download Button -->
+					<a
+					href="https://github.com/ItsSeaJay/firefolio/releases/download/v1.0.1/Firefolio-1.0.1.zip"
+					class="button button-download">
+						Download
+					</a>
+					<!-- GitHub Buttons -->
+					<a class="github-button" href="https://github.com/ItsSeaJay/firefolio/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch ItsSeaJay/firefolio on GitHub">Watch</a>
+					<a class="github-button" href="https://github.com/ItsSeaJay/firefolio" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ItsSeaJay/firefolio on GitHub">Star</a>
+				</div>
+			</section>
+			<section class="row">
+				<div class="one-full column description">
+					<h3>
+						Are you a programmer seeking work in the games industry?
+					</h3>
+					<p>
+						<strong>Firefolio</strong> has you covered.
+						It's a self-hosted web application that lets you
+						create and manage your very own portfolio website.
+						Edit some files, upload them to your server and fill in
+						the forms provided. That's it.
+					</p>
+					<p>
+						You'll be surprised
+						no-one told you about it before...
+					</p>
+				</div>
+			</section>
+			<div class="features">
+				<section class="row feature">
+					<div class="two-thirds column">
+						<h3>No fuss, just projects.</h3>
+						<p>
+							Too many porfolios are packed with information that
+							your employer just simply isn't interested in.
+							<strong>Firefolio</strong>
+							fixes this by staying focused on what they really
+							care about;	your work.
+						</p>
+					</div>
+					<div class="one-third column">
+						<img
+						width="100%"
+						height="auto"
+						src="img/firefolio/feature-1.png"
+						alt="First Feature">
+					</div>
+				</section>
+
+				<hr>
+
+				<section class="row feature">
+					<div class="one-third column">
+						<img
+						width="100%"
+						height="auto"
+						src="img/firefolio/feature-2.png"
+						alt="Placeholder">
+					</div>
+					<div class="two-thirds column">
+						<h3>Always up to date.</h3>
+						<p>
+							Powerful content management tools allow you to quickly
+							add, remove and edit projects as you finish them.
+						</p>
+					</div>
+				</section>
+
+				<hr>
+
+				<section class="row feature">
+					<div class="two-thirds column">
+						<h3>Ready for anything.</h3>
+						<p>
+							Thanks to a comprehensive, real-time search engine,
+							employers can find what they're looking	for in seconds.
+						</p>
+						<p>
+							Say goodbye to tweaking your content for everyone you meet.
+						</p>
+					</div>
+					<div class="one-third column">
+						<img
+						width="100%"
+						height="auto"
+						src="img/firefolio/feature-2.png"
+						alt="Placeholder">
+					</div>
+				</section>
+			</div>
+			<div class="recommendations">
+				<section class="row">
+					<h3>As recommended by...</h3>
+				</section>
+				<section class="row">
+					<div class="one-half column recommendation">
+						<img
+						class="u-center-horizontal"
+						width="50%"
+						height="auto"
+						src="img/people/dan-dudley.jpg"
+						alt="Dan Dudley Headshot">
+						<blockquote>
+							<i>
+								"An essential tool for student programmers to create
+								a portfolio."
+							</i>
+						</blockquote>
+						<strong>
+							- Dan Dudley, Marketing Manager at
+							Grads in Games
+						</strong>
+					</div>
+					<div class="one-half column recommendation">
+						<img
+						class="u-center-horizontal"
+						width="50%"
+						height="auto"
+						src="img/people/david-dino.jpg"
+						alt="David Dino Headshot">
+						<blockquote>
+							<i>
+								"Like Artstation for programmers!"
+							</i>
+						</blockquote>
+						<strong>
+							- David Dino, Designer/PR Analyst at Sumo Digital
+						</strong>
+					</div>
+				</section>
+			</div>
+
+			<section class="row">
+				<div class="one-full column">
+
+				</div>
+			</section>
+
+			<!-- Call to Action -->
+			<section class="call-to-action">
+				<div class="center u-text-center">
+					<h1>Don't go it alone.</h1>
+					<!-- Download Button -->
+					<a
+					href="https://github.com/ItsSeaJay/firefolio/releases/download/v1.0.1/Firefolio-1.0.1.zip"
+					class="button button-download">
+						Download
+					</a>
+					<p>
+						<small>(It's free!)</small>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<section class="row">
+					<div class="one-third column">
+						<h4>Sitemap</h4>
+						<ul>
+							<a href="index.html">
+								<li class="chosen">Home</li>
+							</a>
+							<a href="history.html">
+								<li>History</li>
+							</a>
+							<a href="https://firefolio.readthedocs.io/">
+								<li>Documentation</li>
+							</a>
+							<a href="https://github.com/itsseajay/firefolio/">
+								<li>Source Code</li>
+							</a>
+						</ul>
+					</div>
+					<div class="one-third column">
+						<h4>Contact</h4>
+						<ul>
+							<li>
+								<strong>E-Mail:</strong>
+								info@firefolio.org
+							</li>
+							<li>
+								<strong>Twitter:</strong>
+								@firefolio
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<section class="row">
+						<div class="one-full column">
+							<small>
+								Copyright &copy; Callum John
+								<a href="https://twitter.com/itsseajay">@ItsSeaJay</a>
+								2018.
+								This site and associated software are available
+								under the terms of the
+								<a href="http://www.opensource.org/licenses/MIT">MIT Open Source License</a>.
+							</small>
+						</div>
+					</section>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
