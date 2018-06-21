@@ -53,7 +53,9 @@ h6 {
 
 p,
 big,
-small {
+small,
+strong,
+em {
 	font-family: 'Open Sans', sans-serif;
 }
 
