@@ -108,7 +108,7 @@ nav .icon {
 	height: auto;
 }
 
-.toggled li {
+.opened li {
 	display: block;
 }
 
@@ -392,5 +392,16 @@ blockquote i {
 
 	.recommendation {
 		margin-bottom: 64px;
+	}
+}
+
+/* Tablet */
+@media (min-width: 550px) and (max-width: 750px) {
+	.jumbotron h1 {
+		font-size: 7.0rem;
+	}
+
+	.jumbotron h2 {
+		font-size: 3.5rem;
 	}
 }
